@@ -18,13 +18,13 @@
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
-    "@stencil/core": "0.4.0"
+    "@stencil/core": "^0.5.2"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
-    "@types/jest": "^21.1.1",
-    "jest": "^21.2.1"
+    "@types/jest": "^22.1.2",
+    "jest": "^22.3.0"
   },
   "repository": {
     "type": "git",

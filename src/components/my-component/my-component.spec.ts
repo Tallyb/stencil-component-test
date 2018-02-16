@@ -37,5 +37,13 @@ describe('my-component', () => {
       await flush(element);
       expect(element.textContent.trim()).toEqual('Hello, World! I\'m Peter Parker');
     });
+
+    it('Should emit custom event on click', async () => {
+      let selected = jest.fn();
+      element.addEventListener('itemSelected', selected);
+      let button = element.querySelector('button');
+      await button.click();
+      expect(selected).toHaveBeenCalledWith('hello');   
+  }); 
   });
 });
