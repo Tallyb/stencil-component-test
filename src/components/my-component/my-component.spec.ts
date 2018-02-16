@@ -41,8 +41,8 @@ describe('my-component', () => {
     it('Should emit custom event on click', async () => {
       let selected = jest.fn();
       element.addEventListener('itemSelected', selected);
-      let button = element.querySelector('button');
-      await button.click();
+      let div = element.querySelector('div');
+      await div.click();
       expect(selected).toHaveBeenCalledWith('hello');   
   }); 
   });

@@ -19,9 +19,9 @@ export class MyComponent {
 
   render() {
     return (
-      <button onClick={this.selectItem.bind(this, 'hello')}>
+      <div onClick={this.selectItem.bind(this, 'hello')}>
         Hello, World! I'm {this.first} {this.last}
-      </button>
+      </div>
     );
   }
 }
